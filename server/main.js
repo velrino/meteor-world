@@ -1,8 +1,8 @@
 import { Meteor } from 'meteor/meteor';
-import { Mongo } from 'meteor/mongo';
+//import { Mongo } from 'meteor/mongo';
 
-export const Products = new Mongo.Collection('Products');
+//export const Products = new Mongo.Collection('Products');
 
 Meteor.startup(() => {
-    return Products.find();
+//    return Products.find();
 });

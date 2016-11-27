@@ -1,26 +1,17 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
-import { Mongo } from 'meteor/mongo';
+import { Session } from 'meteor/session';
+import { HTTP } from 'meteor/http';
 
-import './main.html';
+//import './main.html';
 
-export const Productss = new Mongo.Collection('Products');
-
-Template.hello.onCreated(function helloOnCreated() {
+Template.home.onCreated(function helloOnCreated() {
   // counter starts at 0
   this.counter = new ReactiveVar(0);
 });
 
-Template.hello.helpers({
-  mongo() {
-    return Products.find();
-  },
-});
-
-
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
+Template.home.helpers({
+  counter() {
+    return Template.instance().counter.get();
   },
 });
