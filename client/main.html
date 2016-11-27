@@ -10,8 +10,9 @@
 </body>
 
 <template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+{{#each mon in mongo}}
+  <li>{{mon.name}}</li>
+{{/each}}
 </template>
 
 <template name="info">

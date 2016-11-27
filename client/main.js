@@ -1,7 +1,10 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
+import { Mongo } from 'meteor/mongo';
 
 import './main.html';
+
+export const Productss = new Mongo.Collection('Products');
 
 Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
@@ -9,10 +12,11 @@ Template.hello.onCreated(function helloOnCreated() {
 });
 
 Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
+  mongo() {
+    return Products.find();
   },
 });
+
 
 Template.hello.events({
   'click button'(event, instance) {
