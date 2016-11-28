@@ -24,3 +24,9 @@ session
 http
 iron:router
 fourseven:scss
+materialize:materialize@=0.97.7
+accounts-password
+u2622:persistent-session
+fortawesome:fontawesome
+webtempest:animate
+meteorstuff:materialize-modal

@@ -5,7 +5,7 @@ header .brand-logo {
   margin: 1px 0px;
   padding: 0 10px;
 }
-header .brand-logo img{ 
+header .brand-logo img{
   width: 172px;
 }
 #horizontal-nav{
@@ -55,7 +55,7 @@ header .brand-logo img{
   #horizontal-nav ul li{
     min-width: 110px;
   }
-  #horizontal-nav .dropdown-menu span i{    
+  #horizontal-nav .dropdown-menu span i{
     line-height: 0px;
     position: absolute;
     top: 10px;
