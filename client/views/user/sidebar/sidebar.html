@@ -1,0 +1,27 @@
+<template name="Sidebar">
+
+     <ul id="slide-out" class="side-nav">
+        <li>
+           <div class="userView">
+              <div class="background">
+                 <img src="alugalogo.png" alt="" class="responsive-img">
+              </div>
+              <a href="#!user"><img class="circle" src="https://wiki.teamfortress.com/w/images/e/e6/Engineerava.jpg"></a>
+              <a href="#!name"><span class="black-text name">John Doe</span></a>
+              <a href="#!email"><span class="black-text email">{{ UserEmail }}</span></a>
+           </div>
+        </li>
+        <li><a href="#!" class="blue-text">Primeiro Link</a></li>
+        <li><a href="#!" class="blue-text">Segundo Link</a></li>
+        <li><a href="/logout" class="blue-text">Sair</a></li>
+        <li>
+           <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Divisor</a></li>
+     </ul>
+     <div class="fixed-action-btn ">
+        <a class="btn-floating btn-large orange waves-effect waves-light sidemenu" data-activates="slide-out">
+        <i class="fa fa-bars"></i>
+        </a>
+     </div>
+</template>

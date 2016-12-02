@@ -8,11 +8,6 @@ function toastRequest( text, time, color)
   return Materialize.toast(text, time, color);
 }
 
-function makeLogin( obj )
-{
-  console.log(obj);
-}
-
 Template.guest.helpers({
   UserEmail: function () {
     return Session.get('auth').email;
@@ -34,7 +29,7 @@ Template.guest.events({
             {
               Session.setPersistent('auth', JSON.parse(response.content));
               toastRequest( 'Login com sucesso' , 4000, 'green');
-              return document.location.reload(true);
+              //return document.location.reload(true);
             }
 
         });
