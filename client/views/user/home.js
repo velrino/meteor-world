@@ -10,8 +10,6 @@ Template.home.events({
   },
 });
 
-Template.home.helpers({
-  AUTH: function () {
-    return Session.get("auth");
-  }
+Template.home.onRendered(function () {
+  $('.modal1').leanModal();
 });

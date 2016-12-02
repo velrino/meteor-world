@@ -1,60 +1,44 @@
 <template name="home">
    <div class="section">
       <div class="container">
-         <!-- Page Content goes here -->
-         <div class="row">
-                <div class="col s12 m6 l3">
-                   <a href="#" class="list_users">
-                      <div class="waves-effect waves-light card-panel medium teal center white-text">
-                         <i class="fa fa-gear fa-5x"></i>
-                         <p>
-                         <h4>68 Manutenção</h4>
-                         </p>
-                      </div>
-                   </a>
-                </div>
-                  <div class="col s12 m6 l3">
-                     <a href="#" class="list_users">
-                        <div class="waves-effect waves-light card-panel medium teal center white-text">
-                           <i class="fa fa-user fa-5x"></i>
-                           <p>
-                           <h4>68 Usuários</h4>
-                           </p>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col s12 m6 l3">
-                     <a href="#">
-                        <div class="waves-effect waves-light card-panel medium orange center white-text">
-                           <i class="fa fa-users fa-5x"></i>
-                           <p>
-                           <h4>999 Clientes</h4>
-                           </p>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col s12 m6 l3">
-                     <a href="#">
-                        <div class="waves-effect waves-light card-panel medium green center white-text">
-                           <i class="fa fa-truck fa-5x"></i>
-                           <p>
-                           <h4>78 Máquinas</h4>
-                           </p>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col s12 m6 l3">
-                     <a href="#">
-                        <div class="waves-effect waves-light waves-effect waves-light card-panel medium red center white-text">
-                           <i class="fa fa-building-o fa-5x"></i>
-                           <p>
-                           <h4>999 Projetos </h4>
-                           </p>
-                        </div>
-                     </a>
-                  </div>
+
+      <div class="row">
+
+       <div class="col s12 m6 l3">
+         <div class="card col s12 m12 l12 waves-effect waves-light teal center white-text">
+           <div class="card-content">
+             <i class="fa fa-gear fa-5x"></i>
+             <h4>68 Manutenção</h4>
+           </div>
          </div>
+       </div>
+
+       <div class="col s12 m6 l3">
+         <div class="card col s12 m12 l12 waves-effect waves-light green center white-text">
+           <div class="card-content">
+             <i class="fa fa-users fa-5x"></i>
+             <h4>68 Usuários</h4>
+           </div>
+         </div>
+       </div>
+
+     </div>
+
       </div>
+   </div>
+
+
+   <a class="waves-effect waves-light btn modal1" href="#modal1">Modal</a>
+
+   <!-- Modal Structure -->
+   <div id="modal1" class="modal">
+     <div class="modal-content">
+       <h4>Modal Header</h4>
+       <p>A bunch of text</p>
+     </div>
+     <div class="modal-footer">
+       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+     </div>
    </div>
 
    {{> Sidebar }}
