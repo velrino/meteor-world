@@ -9,7 +9,3 @@ Template.home.events({
       return Materialize.toast('Clicou' , 4000, 'green');
   },
 });
-
-Template.home.onRendered(function () {
-  $('.modal1').leanModal();
-});
