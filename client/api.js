@@ -1,14 +1,9 @@
-import { Meteor } from 'meteor/meteor';
 import { HTTP } from 'meteor/http';
 
-Meteor.startup(() => {
 
-});
-
-Meteor.methods({
-  checkTwitter: function ()
-  {
-  var javas = HTTP.call("GET", "http://velrino.com:8050/user",
+API_Users = function()
+{
+  return HTTP.call("GET", "http://velrino.com:8050/user",
   function (error, response){
     if ( error )
     {
@@ -20,8 +15,15 @@ Meteor.methods({
     {
       Session.clear("API_Users");
       Session.set("API_Users", JSON.parse(response.content));
-      return JSON.parse(response.content);
+      return true;
     }
   });
-  }
-});
+}
+
+API_Equipaments = function()
+{
+  $.get("http://velrino.com:8050/equipment", function(data, status)
+  {
+      return data;
+  });
+}

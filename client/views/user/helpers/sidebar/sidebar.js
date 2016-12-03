@@ -1,7 +1,9 @@
+import { Session } from 'meteor/session';
+
 Template.Sidebar.events({
   'click .list_users'(event) {
       return Materialize.toast('Clicou' , 4000, 'green');
-  },
+  }
 });
 
 
@@ -10,7 +12,7 @@ Template.Sidebar.onRendered(function () {
     {
         menuWidth: 240,
         edge: 'left',
-        closeOnClick: false
+        closeOnClick: true
     }
   );
 });

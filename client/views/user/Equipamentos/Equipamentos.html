@@ -1,22 +1,22 @@
-<template name="Manutencao">
+<template name="Equipamentos">
    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
 
    <div class="section">
       <div class="container">
         {{#animate type="rubberBand infinite" delay="200"}}
-           <a class="btn-floating btn-large waves-effect waves-light btn leanModal right" href="#dinamic_modal" data-modalType="createMaintenance"><i class="fa fa-plus" aria-hidden="true"></i></a>
+           <a class="btn-floating btn-large waves-effect waves-light btn leanModal right" href="#dinamic_modal" data-modalType="createEquipment"><i class="fa fa-plus" aria-hidden="true"></i></a>
          {{/animate}}
          <div class="row white">
             <div class="col s12 m12 l12 white">
                   <table id="tabela_busca" class="display" cellspacing="10" width="98%">
                      <thead>
                         <tr>
-                            <th width="5%">ID</th>
-                           <th width="20%">Equipamento</th>
                            <th width="20%">Tipo</th>
-                           <th width="20%">Horímetro inicial</th>
-                           <th width="20%">Horímetro final</th>
+                           <th width="20%">Equipamento</th>
+                           <th width="20%">Marca</th>
+                           <th width="20%">Preço</th>
+                           <th width="20%">Horímetro</th>
                         </tr>
                      </thead>
                   </table>

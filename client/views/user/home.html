@@ -6,29 +6,35 @@
 
        <div class="col s12 m6 l4">
          <div class="card col s12 m12 l12 waves-effect waves-light teal center white-text">
+           <a href="/manutencao" class="white-text">
            <div class="card-content">
-             <i class="fa fa-gear fa-5x"></i>
+             <i class="fa fa-clock-o fa-5x"></i>
              <h4>Manutenção</h4>
            </div>
+         </a>
          </div>
        </div>
-      {{#if AUTH.admin}}
+      {{#if compare AUTH.type "admin"}}
        <div class="col s12 m6 l4">
          <div class="card col s12 m12 l12 waves-effect waves-light green center white-text">
+                <a href="/usuarios" class="white-text">
            <div class="card-content">
              <i class="fa fa-users fa-5x"></i>
              <h4>Usuários</h4>
            </div>
+         </a>
          </div>
        </div>
       {{/if}}
-      {{#if AUTH.admin}}
+      {{#if compare AUTH.type "admin"}}
        <div class="col s12 m6 l4">
          <div class="card col s12 m12 l12 waves-effect waves-light orange center white-text">
+           <a href="/equipamentos" class="white-text">
            <div class="card-content">
              <i class="fa fa-truck fa-5x"></i>
-             <h4>Locações</h4>
+             <h4>Equipamentos</h4>
            </div>
+         </a>
          </div>
        </div>
       {{/if}}
@@ -38,8 +44,6 @@
       </div>
    </div>
 
-
-   {{> Modal }}
    {{> Sidebar }}
 
 </template>

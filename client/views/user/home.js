@@ -9,3 +9,8 @@ Template.home.events({
       return Materialize.toast('Clicou' , 4000, 'green');
   },
 });
+
+
+Template.home.helpers({
+  tasks: Session.get("auth"),
+});
